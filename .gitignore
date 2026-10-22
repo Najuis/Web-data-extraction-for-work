@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.py[cod]
+computrabajo_scraper.log
+empleos_computrabajo_*.csv
+.pytest_cache/
+# Archivos de configuración de asistentes de IA (no deben versionarse)
+AGENTS.md
+.cline/
+.cursor/
+.github/copilot-instructions.md

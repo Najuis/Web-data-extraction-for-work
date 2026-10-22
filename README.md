@@ -1,38 +1,32 @@
 # Web-data-extraction-for-work
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
+[![Selenium](https://img.shields.io/badge/Selenium-4.15%2B-green.svg)](https://www.selenium.dev/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-Producción-success.svg)]()
 
-Extractor robusto y automatizado de ofertas de trabajo de [Computrabajo Colombia](https://www.computrabajo.com.co), implementado en Python utilizando **Selenium** y **BeautifulSoup**. 
+## 🎓 Propósito Educativo
 
-Diseñado con principios de ingeniería de software, este proyecto prioriza la resiliencia ante cambios en el DOM, la integridad de los datos extraídos, la evasión básica de detección de bots y la compatibilidad total tanto en entornos locales como en la nube (GitHub Codespaces, CI/CD).
+Este proyecto ha sido desarrollado como **material didáctico para el aprendizaje de automatización web con Selenium**. Su objetivo principal es demostrar de manera práctica cómo interactuar programáticamente con sitios web dinámicos, extraer información estructurada y manejar casos reales de scraping ético.
+
+**Casos de uso académico:**
+- Cursos de automatización de pruebas web
+- Laboratorios de ingeniería de software
+- Proyectos de análisis de datos
+- Investigación en extracción de información pública
+- Práctica de patrones de diseño en scraping
 
 ---
 
-## 📋 Requisitos Previos
+## 🤖 ¿Qué es Selenium y Cómo se Utiliza?
 
-- **Python:** Versión 3.10 o superior.
-- **Navegador:** Google Chrome o Chromium instalado en el sistema. *(Nota: Selenium Manager descarga y gestiona el ChromeDriver compatible de forma automática y transparente)*.
-- **Entorno:** Totalmente compatible con Windows, macOS, Linux y entornos en la nube sin interfaz gráfica (GitHub Codespaces, contenedores Docker).
+### Definición
 
----
+**Selenium** es un framework de código abierto para automatizar navegadores web. Permite controlar programáticamente un navegador (Chrome, Firefox, Edge, etc.) para realizar acciones como un usuario humano: navegar páginas, hacer clic en elementos, llenar formularios y extraer información.
 
-## ⚙️ Instalación
+### Conceptos Fundamentales Implementados en Este Proyecto
 
-Se recomienda encarecidamente el uso de un entorno virtual para aislar las dependencias del proyecto y evitar conflictos con otros paquetes del sistema.
-
-```bash
-# 1. Crear el entorno virtual
-python3 -m venv .venv
-
-# 2. Activar el entorno virtual
-# En Linux / macOS / GitHub Codespaces:
-source .venv/bin/activate
-# En Windows (CMD):
-.venv\Scripts\activate
-# En Windows (PowerShell):
-.venv\Scripts\Activate.ps1
-
-# 3. Instalar las dependencias
-pip install -r requirements.txt
+#### 1. **WebDriver: El Controlador del Navegador**
+```python
+# Selenium crea una instancia de Chrome controlada por Python
+driver = webdriver.Chrome(options=chrome_options)
